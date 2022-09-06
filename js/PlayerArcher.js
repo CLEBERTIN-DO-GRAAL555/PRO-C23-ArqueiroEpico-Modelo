@@ -25,26 +25,12 @@ class PlayerArcher {
       Matter.Body.setAngle(this.body, angle);
     }
 
-    // if (keyIsDown(UP_ARROW) && angle > -103) {
-    //   angle -=1;
-    //   Matter.Body.setAngle(this.body, angle);
-    // }
+     if (keyIsDown(UP_ARROW) && angle > -103) {
+       angle -=1;
+      Matter.Body.setAngle(this.body, angle);
+     }
 
-    // if (keyIsDown(UPARROW) && angle > -103) {
-    //   angle -=1;
-    //   Matter.Body.setAngle(this.body, angle);
-    // }
-
-    // if (keyIsDown(ARROW) && angle > -103) {
-    //   angle -=1;
-    //   Matter.Body.setAngle(this.body, angle);
-    // }
-
-    // if (keyIsDown(UP_ARROW) && angle > -103) {
-    //   angle -=1;
-    //   Matter.Body.set(this.body, angle);
-    // }
-
+    
     push();
     translate(pos.x, pos.y);
     rotate(angle);
